@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movilidad Sostenible</title>
+    <script src="https://kit.fontawesome.com/0a323a18df.js" crossorigin="anonymous"></script>
+    <script src="codigo.js"></script>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #2357FF;
+}
+header{
+    width: 100%;
+    height: 80px;
+    color: white;
+}
+.he-iz{
+    float: left;
+    line-height: 80px;
+    padding-left: 20px;
+}
+.he-de{
+    float: right;
+    line-height: 80px;
+    padding-right: 20px;
+}
+.he-de a{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 24px;
+    float: right;
+    margin-right: 20px;
+}
+.he-de a:hover{
+    font-size: 28px;
+    transition: 700ms;
+}
+.ct-i-he{
+    float: right;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #2357FF;
+    font-size: 28px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.text-sbr{
+    margin: auto;
+    padding-left: 50px;
+}
+.text-sbr h3{
+    letter-spacing: 1px;
+    font-size: 22px;
+    color: #FFBC5A;
+}
+.secc-1{
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+}
+.secc-iz{
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+.secc-iz h1{
+    font-size: 65px;
+}
+.secc-2{
+    background-color: white;
+    width: 100%;
+    height: 600px;
+    margin-top: 120px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+#text-sbr-2 h3{
+    color: #2357FF;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.secc-2-text{
+    padding-left: 50px;
+    padding-top: 30px;
+    color: #0B0B0B;
+    font-size: 20px;
+    float: left;
+}
+.ct-bloques-1, .ct-bloques-2{
+    float: right;
+    padding-right: 50px;
+}
+.bloque{
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    border: 1px #2357FF solid;
+    border-radius: 30px;
+    float: right;
+    box-shadow: 1px 1px 50px 1px #2356ff3f;
+    cursor: pointer;
+}
+.bloque:hover{
+    width: 370px;
+    height: 210px;
+    transition: 500ms;
+    transition-delay: 100ms;
+}
+#bl-se-1{
+    margin-right: 70px;
+    margin-top: 100px;
+}
+.ct-bloques-2{
+    width: 100%;
+}
+.ct-bloques-2 div{
+    float: right;
+}
+#bl-se-2{
+    float: left;
+    margin-left: 180px;
+}
+#bl-se-3{
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.ct-img-bloque, .ct-img-bloque-2{
+    background-color: #3923ff;
+    width: 60px;
+    height: 60px;
+    margin-left: 50px;
+    margin-top: -30px;
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bloque h3{
+    padding: 30px 30px 40px 30px;
+    color: #0B0B0B;
+    font-size: 24px;
+}
+.abj-bloque{
+    padding-left: 30px;
+    height: 30px;
+}
+.abj-bloque h4{
+    color: #2357FF;
+    font-size: 22px;
+    float: left;
+    line-height: 30px;
+}
+.abj-bloque p, .abj-bloque i{
+    float: left;
+    padding-left: 15px;
+    line-height: 30px;
+    color: #2357FF;
+    font-size: 24px;
+    font-weight: 600;
+}
+.ct-img-bloque-2{
+    float: left !important;
+    margin-left: 0px;
+    margin-right: 20px;
+}
+.abj-bloque{
+    float: left !important;
+}
+.secc-iz p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.secc-img-1{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    border-top: 5px gray solid;
+    border-bottom: 5px gray solid;
+}
+.secc-img-1 img{
+    width: 250px;
+    margin-top: 20px;
+}
+.sections{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(249 249 249);
+    border-bottom: 50px white solid;
+    border-top: 3px gray solid;
+}
+.sections h1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+    color: #0B0B0B;
+    padding-bottom: 50px;
+}
+.ct-texto-iz{
+    float: left;
+    padding-left: 50px;
+    width: 45%;
+}
+.ct-texto-de{
+    float: right;
+    padding-right: 50px;
+    width: 45%;
+}
+.tx_centro{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.sections p{
+    font-size: 20px;
+    color: #0B0B0B;
+    letter-spacing: 1px;
+}
+.ct-img-bloque i, .ct-bloques-2 i{
+    color: white;
+    font-size: 26px;
+}
+
+#beneficios p, #beneficios h1{
+    color: white;
+}
+.opi{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="he-iz">
+            <h1>Movilidad Sostenible</h1>
+        </div>
+        <div class="he-de">
+            <a href="#acercade">Acerca de</a>
+        </div>
+    </header>
+    <!-- ----------------------------------------------------- -->
+    <!-- PRIMERA SECCION -->
+    <div class="text-sbr"><h3>Movilidad Sostenible</h3></div>
+    <section class="secc-1">
+        <div class="secc-iz">
+            <h1>Autos Electricos</h1>
+            <p>Un coche eléctrico es un automóvil propulsado por uno o más motores <br>
+                eléctricos, usando energía eléctrica almacenada normalmente en baterías <br>
+                recargables. Los motores eléctricos proporcionan a los automóviles <br>
+                eléctricos un motor instantáneo, proporcionando una aceleración rápida <br>
+                desde parado y continua.</p>
+        </div><br><br><br><br><br>
+        <div class="secc-img-1">
+            <marquee>
+                <img src="img.jpg">
+            </marquee>
+        </div>
+    </section>
+    <!-- ------------------------------------------------------ -->
+    <!-- SEGUNDA SECCION -->
+    <section class="secc-2">
+        <div class="text-sbr" id="text-sbr-2"><h3>Movilidad Sostenible</h3></div>
+        <div class="secc-2-text">
+            <h1>
+                Conoce mas acerca de la <br>
+                movilidad sostenible en <br>
+                autos electricos:
+            </h1>
+        </div>
+        <div class="ct-bloques-1">
+            <a href="#caracteristicas"><div class="bloque">
+                <div class="ct-img-bloque"><i class="fa fa-external-link" aria-hidden="true"></i></div>
+                <h3>Caracteristicas</h3>
+                <div class="abj-bloque">
+                    <h4>Ver Mas</h4>
+                    <p>></p>
+                </div>
+            </div></a>
+            <a href="#beneficios"><div class="bloque" id="bl-se-1">
+                <div class="ct-img-bloque"><i class="fa fa-check-circle" aria-hidden="true"></i></div>
+                <h3>Beneficios</h3>
+                <div class="abj-bloque">
+                    <h4>Ver Mas</h4>
+                    <p>></p>
+                </div>
+            </div></a>
+        </div>
+        <div class="ct-bloques-2">
+            <a href="#reduccion"><div class="bloque">
+                <div class="ct-img-bloque-2"><i class="fa fa-money" aria-hidden="true"></i></div><br>
+                <h3>Reduccion de costos</h3>
+                <div class="abj-bloque">
+                    <h4>Ver Mas</h4>
+                    <p>></p>
+                </div>
+            </div></a>
+            <a href="#mejoramiento"><div class="bloque"  id="bl-se-3">
+                <div class="ct-img-bloque-2"><i class="fa fa-pagelines" aria-hidden="true"></i></div><br>
+                <h3>Mejoramiento al <br> impacto ambiental</h3>
+                <div class="abj-bloque">
+                    <h4>Ver Mas</h4>
+                    <p>></p>
+                </div>
+            </div></a>
+            <a href="#opiniones"><div class="bloque" id="bl-se-2">
+                <div class="ct-img-bloque-2"><i class="fa fa-commenting-o" aria-hidden="true"></i></div><br>
+                <h3>Opiniones</h3>
+                <div class="abj-bloque">
+                    <h4>Ver Mas</h4>
+                    <p>></p>
+                </div>
+            </div></a>
+        </div>
+    </section>
+    <!-- ----------------------------------------------------------- -->
+    <!-- CARACTERISTICAS -->
+    <a name="caracteristicas"><section class="sections">
+        <h1>Caracteristicas</h1>
+        <div class="ct-texto-iz">
+            <p>
+            Los coches eléctricos funcionan de forma silenciosa y suave, incluso cuando aceleran con potencia. Debido a que funcionan con una fuente de energía limpia (la electricidad), los coches eléctricos no generan gases contaminantes, lo que los convierte en vehículos 0 emisiones, un transporte respetuoso con el ambiente.
+            Los coches eléctricos cuentan con motores eléctricos que suelen ser pequeños y ligeros. Estos motores pueden ser de corriente continua o alterna. Los primeros se alimentan directamente de la batería principal. Los segundos, de la energía emitida por la batería, pero que previamente ha sido transformada en corriente alterna por un inversor. 
+            </p>
+        </div>
+        <div class="ct-texto-de">
+            <p>
+                Toda la electricidad que impulsa al motor de los coches eléctricos se acumula en las baterías. Aunque existen distintos tipos, las más utilizadas son las baterías de ion-litio, ya que este material es un poco más ligero que otros como el plomo, lo que le da una mayor capacidad para almacenar electricidad.
+                Los coches eléctricos, a diferencia de los híbridos y los de combustión, eliminan por completo el uso del motor a gasolina. Por lo tanto, solo dependen de uno eléctrico cuyas baterías deben ser recargadas conectando el vehículo a una red de energía eléctrica.
+
+                De 0 a 100 km/h en apenas 3,3 segundos.
+                Una autonomía de 580 kilómetros.
+                Cuenta con un motor dual AWD con tracción a las cuatro ruedas.
+                Alcanza una velocidad máxima de 261 km/h.
+
+            </p>
+        </div>
+    </section></a>
+    <!-- -------------------------------------------------------------- -->
+    <!-- BENEFICIOS -->
+        <a name="beneficios"><section class="sections">
+            <h1>Beneficios</h1>
+            <div class="ct-texto-iz">
+                <p>
+                    A lo largo de los últimos años, este tipo de vehículos han ido ganando cada vez más popularidad en el mercado automotor. Esto se debe a los múltiples beneficios que aportan tanto a los usuarios, como a la sociedad y al medio ambiente.
+Estas son las principales ventajas de los coches eléctricos:
+	Los coches eléctricos están construidos con menos piezas que los de combustión. Esto hace que su mantenimiento sea más simple y su coste menor.
+	Los coches eléctricos consumen menos energía para realizar el mismo esfuerzo que los vehículos convencionales, lo que se traduce en un importante ahorro energético.
+	Los coches eléctricos funcionan de forma silenciosa y suave, incluso cuando aceleran con potencia.
+	Debido a que funcionan con una fuente de energía limpia (la electricidad), los coches eléctricos no generan gases contaminantes, lo que los convierte en vehículos 0 emisiones, un transporte respetuoso con el ambiente. Algo similar ocurre con los coches híbridos, aunque estos sí producen una mínima cantidad de gases.
+
+                </p>
+            </div>
+            <div class="ct-texto-de">
+                <p>
+                    1. Cero emisiones
+Los coches 100% eléctricos no emiten absolutamente ninguna emisión de gases contaminantes durante su funcionamiento, por lo que, si nos preocupa realmente el medio ambiente, esta debería ser una ventaja muy a tener en cuenta. <br>
+
+2. Menos averías mecánicas
+Al prescindir de un motor tradicional y un cambio de marchas tradicional con embrague, las averías de esta índole quedan reducidas a prácticamente ninguna, ya que hay muy pocos elementos en movimiento y expuestos al desgaste en un coche eléctrico. <br>
+3. Mantenimiento casi inexistente
+Más allá de los elementos desgastables como los frenos o los neumáticos, el mantenimiento de un coche eléctrico queda reducido a un chequeo del estado de las baterías y los motores eléctricos cada determinado tiempo. Se acabó el cambiar filtros, lubricantes y líquidos varios. <br>
+
+                </p>
+            </div>
+        </section></a>
+        <!-- -------------------------------------------------------------- -->
+
+    <!-- REDUCCION DE COSTOS -->
+    <a name="reduccion"><section class="sections">
+        <h1>Reduccion de costos</h1>
+        <div class="ct-texto-iz">
+            <p>
+                Las ventas de vehículos eléctricos han aumentado exponencialmente en los últimos años, acompañados por la baja en los precios. Sin embargo, la adopción de vehículos eléctricos (VE) sigue siendo limitada por su precio más alto en relación con los vehículos de gasolina comparables.
+                Los coches eléctricos tienen una de las contras que menos interesan de cara a los de gasolina, y son sus precios. En la actualidad, muchos usuarios siguen viendo esto como una barrera a la hora de adquirir un vehículo de nueva generación. Y, aunque existen diversas ayudas para facilitar la compra, los coches de gasolina y diésel tienen ese punto que los hace de un mejor atractivo para los conductores.                 
+            </p>
+        </div>
+        <div class="ct-texto-de">
+            <p>
+                Aunque los coches eléctricos están ganando cada vez un mayor protagonismo, la realidad nos dice que los conductores siguen teniendo a los de gasolina como la principal atención en el momento a decantarse por uno u otro. Entre los varios factores, además de las contras como la autonomía en gran parte de los casos, los altos precios son el factor principal para no llevarlo a cabo. Y, aunque se sabe no será para siempre, sí habrá que esperar algún tiempo más para verlo.
+            </p>
+        </div>
+    </section></a>
+    <!-- -------------------------------------------------------------- -->
+    <!-- MEJORAMIENTO AL IMPACTO AMBIENTAL -->
+        <a name="mejoramiento"><section class="sections">
+            <h1>Mejoramiento al impacto ambiental</h1>
+            <div class="ct-texto-iz">
+                <p>
+                    Si comparamos un coche eléctrico con un automóvil térmico (es decir, uno que eche mano del uso de combustibles fósiles), un coche eléctrico tiene un impacto más sostenible. Esto se debe a que para arrancar un automóvil eléctrico es necesario, por supuesto, la electricidad que se puede generar a partir de fuentes renovables (y en este caso el impacto es mínimo) o de fuentes tradicionales.
+En el caso de usar fuentes tradicionales, el impacto es también positivo: esto se debe a que la electricidad generada por 1 litro de aceite y luego transportada a una batería eléctrica tiene un valor mayor que la energía que fluye a partir de 1 litro de petróleo que se transforma en gasolina y es utilizado por un motor de combustión. En resumen, los autos eléctricos usan una tecnología más eficiente.
+
+Con ello el impacto sobre el medio ambiente es evidentemente menor, además, los coches eléctricos están impulsados por un motor eléctrico y llevan baterías recargables; así que el hecho de utilizar energía eléctrica para mover el coche hace que se eviten emisiones de dióxido de carbono a la atmósfera. 
+                </p>
+            </div>
+            <div class="ct-texto-de">
+                <p>
+                    De este modo, además, contribuimos a evitar tanto la contaminación atmosférica como la contaminación acústica. Por ende, los coches eléctricos cooperan con nuestro medio ambiente muchísimo más que cualquier coche con motores diésel o con motores de gasolina. Por supuesto, un punto que no debemos olvidar es la recarga de las baterías que debe hacerse de modo respetuoso para el medio ambiente con fuentes provenientes de energías renovables. Todo influye en la preservación del medio ambiente.
+Por otro lado, al utilizar coches eléctricos no solo logramos reducir significativamente las emisiones de CO2 a la atmósfera, sino que tenemos que resaltar también como los motores eléctricos permiten recuperar energía en las frenadas. Del mismo modo, la energía que se utiliza para fabricar las baterías de estos coches ecológicos no supera a la energía que se utiliza en los coches convencionales que utilizan materia prima como el litio.
+
+               </p>
+            </div>
+        </section></a>
+    <!-- -------------------------------------------------------------- -->
+    <!-- OPINIONES Y ACERC DE -->
+    <a name="opiniones"><section class="secc-1"></a>
+        <div class="secc-iz">
+            <h1>Opiniones</h1>
+            <p class="opi">Creo que ha sido muy positiva ambientalmente, ya que Los vehículos eléctricos, al contrario que los de combustión, no generan ninguna emisión de gases contaminantes mientras funcionan, por lo que son la mejor opción para respetar al medioambiente sin restar ningún ápice a la movilidad.</p> <br> <br> <br>
+            <a name="acercade"><h1>Creado por: </h1>
+            <p class="opi">Jose Felipe Landazuri y Juan Camilo Paz Correa...</p>
+        </div><br><br><br><br><br></a>
+    </section>
+   
+    
+
+    
+    
+</body>
+</html>
